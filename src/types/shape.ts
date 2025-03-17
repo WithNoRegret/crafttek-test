@@ -1,0 +1,1 @@
+export type ShapeType = 'square' | 'triangle' | 'circle';

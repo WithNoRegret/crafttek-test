@@ -1,19 +1,21 @@
 import { forwardRef } from "react";
 
-const HtmlText = forwardRef(({ html, id }: any, ref: any) => {
+import s from './htmlText.module.scss';
+
+export interface htmlTextProps {
+  html: string;
+  id: string;
+  className: string;
+}
+
+export const HtmlText = forwardRef<HTMLDivElement, htmlTextProps>(({ html, id, className }, ref) => {
   return (
     <div
       id={`htmltext_${id}`}
       dangerouslySetInnerHTML={{ __html: html }}
-      style={{
-        position: "fixed",
-        overflow: "hidden",
-        left: "100000px",
-        top: "100000px",
-      }}
+      className={`${s.htmlText} ${className}`}
       ref={ref}
-    ></div>
+    >
+    </div>
   );
 });
-
-export default HtmlText;

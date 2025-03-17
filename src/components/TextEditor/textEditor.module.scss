@@ -1,0 +1,41 @@
+.controlGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.isActive {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+}
+
+.editorContainer {
+  background-color: rgb(255, 255, 255);
+}

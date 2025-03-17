@@ -1,0 +1,15 @@
+.canvas {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  position: relative;
+  padding: 8px;
+}
+
+.stage {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
